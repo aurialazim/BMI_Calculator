@@ -28,13 +28,13 @@ public class About extends AppCompatActivity {
         });
 
         TextView link = findViewById(R.id.github);
-        String linkText = link.getText() + "<a href='https://github.com/mirzafrina/BMI_Calculator.git";
+        String linkText = link.getText() + "<a href='https://github.com/aurialazim/BMI_Calculator.git";
         link.setText(Html.fromHtml(linkText));
         link.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     private void gotoUrl(){
-        Uri uri = Uri.parse("https://github.com/mirzafrina/BMI_Calculator.git");
+        Uri uri = Uri.parse("https://github.com/aurialazim/BMI_Calculator.git");
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
 
     }
